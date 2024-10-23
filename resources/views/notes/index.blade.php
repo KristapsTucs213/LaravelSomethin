@@ -13,6 +13,7 @@
             <li>
                 <h2>{{ $note-> title}}</h2>
                 <p>{{ $note-> content}}</p>
+                <a href="/notes/{{ $note->id }}">Show</a>
             </li>
         @endforeach
     </ul>

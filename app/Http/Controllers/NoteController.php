@@ -31,4 +31,10 @@ class NoteController extends Controller
         // return view('notes.index');
         return redirect('/notes/');
     }
+
+    public function show($id)
+    {
+        $Note = Note::find($id);
+       return view('notes.show', ['notes' => $note]);
+    }
 }
